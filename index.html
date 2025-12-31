@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story | Sakib & Moou</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'Hind Siliguri',sans-serif;
+    color:#fff;
+    overflow-x:hidden;
+    perspective:1px;
+    height:100vh;
+  }
+  .bg{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:url('background.jpg') no-repeat center center fixed;
+    background-size:cover;
+    transform:translateZ(-1px) scale(2);
+    z-index:-1;
+    transition:transform 0.3s ease-out;
+  }
+  header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.4);
+  }
+  header h1{
+    font-size:38px;
+    line-height:1.4;
+  }
+  header span{color:#ff7aa2}
+
+  section{
+    max-width:800px;
+    margin:auto;
+    padding:60px 20px;
+  }
+  .block{
+    background:rgba(0,0,0,0.5);
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+  }
+  .block.show{opacity:1;transform:translateY(0)}
+  .date{color:#ffb3c6;font-weight:600;margin-bottom:8px}
+
+  footer{
+    text-align:center;
+    padding:60px 20px 80px;
+    background:rgba(0,0,0,0.4);
+  }
+  footer h2{font-size:28px}
+  footer button{
+    margin-top:20px;
+    padding:14px 34px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d88;
+    color:#fff;
+  }
+
+  .hearts span{
+    position:fixed;
+    bottom:-10px;
+    font-size:20px;
+    animation:float 6s linear infinite;
+  }
+  @keyframes float{
+    from{transform:translateY(0);opacity:1}
+    to{transform:translateY(-110vh);opacity:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<header>
+  <h1>
+    Sakib & <span>Moou</span><br>
+    আমাদের ভালোবাসার গল্প
+  </h1>
+</header>
+
+<section>
+  <div class="block">
+    <div class="date">শুরু</div>
+    আমাদের গল্প কোনো সিনেমা দিয়ে না।<br>
+    শুরু হয়েছিল একটা Messenger group থেকে—
+    সেখানেই প্রথম দেখা, প্রথম কথা, প্রথম ভালো লাগা।
+  </div>
+
+  <div class="block">
+    <div class="date">25 / 3 / 2025</div>
+    এই দিন থেকেই আমি আর তুমি হয়ে গেলাম—<br>
+    <b>আমরা</b>।
+  </div>
+
+  <div class="block">
+    <div class="date">7 তারিখ | Gopalganj</div>
+    আমি কালো T-shirt পরে ছিলাম,<br>
+    Moou ছিল সবুজ ৩-পিসে।<br>
+    রিকশায় যাওয়া, আইসক্রিম খাওয়া,
+    আর হঠাৎ করে বুকে জড়িয়ে ধরা—
+    এই স্মৃতিগুলো আজও জীবিত।
+  </div>
+
+  <div class="block">
+    <div class="date">আমাদের জায়গা</div>
+    কলা ভবনের ৪র্থ তলা—<br>
+    শুধু একটা জায়গা না,
+    ওখানে আমাদের ইতিহাস লেখা আছে।
+  </div>
+
+  <div class="block">
+    <div class="date">সময়টা সহজ ছিল না</div>
+    প্রায় ২ মাস পরে সমস্যা এলো।<br>
+    সমস্যা কম ছিল না,
+    কিন্তু ভালোবাসা তখনও ছিল।
+  </div>
+
+  <div class="block">
+    <div class="date">21 / 9 / 2025</div>
+    Breakup-এর দিন।<br>
+    অদ্ভুতভাবে, breakup হওয়ার আগ পর্যন্ত
+    আমরা খুব happy ছিলাম।<br>
+    শেষটা বদলে দিয়েছিল এক অনাকাঙ্ক্ষিত ঘটনা।
+  </div>
+
+  <div class="block">
+    <div class="date">17 / 11 / 2025</div>
+    আরেকটা কঠিন দিন।<br>
+    সেদিনও আমি পাশে ছিলাম,
+    কারণ ভালোবাসা গেলে দায়িত্ব যায় না।
+  </div>
+
+  <div class="block">
+    <div class="date">আবার আমরা</div>
+    সবকিছু পেরিয়ে,
+    আমরা আবার একটা সুন্দর সম্পর্কে ফিরে এলাম।
+  </div>
+</section>
+
+<footer>
+  <h2>2026</h2>
+  <p>সব অতীত ভুলে নতুন করে শুরু</p>
+  <button>Moou, তুমি কি আমার সাথে শুরু করবে? 💖</button>
+</footer>
+
+<div class="hearts"></div>
+
+<script>
+  const blocks=document.querySelectorAll('.block');
+  window.addEventListener('scroll',()=>{
+    blocks.forEach(b=>{
+      const top=b.getBoundingClientRect().top;
+      if(top<window.innerHeight-100)b.classList.add('show');
+    });
+    document.querySelector('.bg').style.transform=`translateZ(-1px) scale(2) translateY(${window.scrollY*0.2}px)`;
+  });
+
+  const hearts=document.querySelector('.hearts');
+  setInterval(()=>{
+    const h=document.createElement('span');
+    h.innerText='💖';
+    h.style.left=Math.random()*100+'%';
+    h.style.animationDuration=4+Math.random()*4+'s';
+    hearts.appendChild(h);
+    setTimeout(()=>h.remove(),8000);
+  },600);
+</script>
+
+</body>
+</html>
